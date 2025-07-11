@@ -1,0 +1,128 @@
+.experience-section {
+  margin: 2.5rem auto 1.5rem auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 1.5em;
+  border: 1.5px solid #e0e7ff;
+  padding: 2.2rem 2.5rem 1.5rem 2.5rem;
+  font-family: 'Merriweather', serif;
+  box-shadow: 0 2px 16px rgba(37,99,235,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1e40af;
+  margin: 0 0 0.2rem 0;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.1;
+  position: relative;
+}
+
+.section-title-accent {
+  width: 60px;
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #2563eb 60%, #00c9a7 100%);
+  margin: 0.2rem 0 1.1rem 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.experience-article {
+  background: #fff;
+  border-radius: 1.2rem;
+  border-left: 4px solid #2563eb;
+  border: 1.5px solid #e0e7ff;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  font-family: 'Merriweather', serif;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.2rem;
+}
+
+.exp-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+  font-variant: small-caps;
+}
+
+.exp-location {
+  font-size: 0.95rem;
+  color: #666;
+  margin-left: 0.2rem;
+}
+
+.exp-date {
+  font-size: 0.95rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.exp-desc {
+  font-size: 1rem;
+  color: #222;
+  margin: 0.2rem 0 0.5rem 0;
+  text-align: justify;
+}
+
+.experience-article ul {
+  margin: 0 0 0.5rem 1.2rem;
+  padding: 0;
+  list-style: disc inside;
+  font-size: 0.98rem;
+  color: #222;
+}
+
+.experience-fade-separator {
+  width: 100vw;
+  height: 32px;
+  margin: 0 -2vw -1.2rem -2vw;
+  background: linear-gradient(180deg, rgba(247,248,250,0) 0%, #f7f8fa 100%);
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .experience-section {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 1.2rem 0.2rem 1rem 0.2rem;
+    border-radius: 1em;
+    margin: 0.7rem 0 0.7rem 0;
+  }
+  .section-title {
+    font-size: clamp(1.1rem, 4vw, 2rem);
+  }
+  .section-title-accent {
+    width: 40px;
+    height: 4px;
+    margin: 0.15rem 0 0.7rem 0;
+  }
+  .experience-fade-separator {
+    height: 18px;
+    margin: 0 -1vw -0.7rem -1vw;
+  }
+} 
